@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 25" width="21" height="25">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #000000 } 
+		.shp1 { fill: #252525;stroke: #959595;stroke-width: 2 } 
+		.shp2 { fill: #ffffff } 
+		.txt3 { font-size: 15px;line-height: 25px;fill: #959595;font-weight: 400;font-family: "PTSans-Regular", "PT Sans" } 
+		.txt4 { font-size: 15px;line-height: 25px;fill: #000000;font-family: "Bebas" } 
+		.shp5 { fill: #acacac } 
+		.txt6 { font-size: 25px;line-height: 25px;fill: #ffffff;font-family: "Akzidenz Grotesk BQ" } 
+		.txt7 { font-size: 15px;line-height: 25px;fill: #000000;font-weight: 400;font-family: "PTSans-Regular", "PT Sans" } 
+		.txt8 { font-size: 15px;line-height: 25px;fill: #4d4d4d;font-weight: 400;font-family: "PTSans-Regular", "PT Sans" } 
+		.txt9 { font-size: 50px;line-height: 25px;fill: #000000;font-family: "Akzidenz Grotesk BQ" } 
+	</style>
+	<g >
+		<g >
+			<path class="shp0" d="M434 49L874 49L874 474L434 474L434 49Z" />
+			<path class="shp0" d="M434 49L1117 49L1117 524L434 524L434 49Z" />
+			<path class="shp1" d="M494 149L868 149L868 199L494 199L494 149ZM494 224L868 224L868 274L494 274L494 224ZM494 299L868 299L868 399L494 399L494 299Z" />
+			<g >
+				<path class="shp2" d="M494 424L649 424L649 474L494 474L494 424Z" />
+				<text style="transform: matrix(1,0,0,1,511.5,179.75)" >
+					<tspan x="0" y="0" class="txt3">Name</tspan>
+				</text>
+				<text style="transform: matrix(1,0,0,1,511.5,253.75)" >
+					<tspan x="0" y="0" class="txt3">E-mail or phone number</tspan>
+				</text>
+				<text style="transform: matrix(1,0,0,1,511.5,324.75)" >
+					<tspan x="0" y="0" class="txt3">Your message</tspan>
+				</text>
+				<text style="transform: matrix(1,0,0,1,515.5,455.75)" >
+					<tspan x="0" y="0" class="txt4" dx="0 2 2 2 2 2 2 2 2 2 2 2" >Send message</tspan>
+				</text>
+			</g>
+			<g >
+				<path class="shp5" d="M-6 49L434 49L434 474L-6 474L-6 49Z" />
+				<path class="shp5" d="M-249 49L434 49L434 524L-249 524L-249 49Z" />
+			</g>
+			<text style="transform: matrix(1,0,0,1,493.5,120.75)" >
+				<tspan x="0" y="0" class="txt6" dx="0 3 3 3 3 3 3 3 3 3 3 3" >Get in touch</tspan>
+			</text>
+		</g>
+		<text style="transform: matrix(1,0,0,1,29.5,-31.25)" >
+			<tspan x="0" y="0" class="txt7">45-35 #B 39th St, Sunnyside, NY 11104</tspan>
+		</text>
+		<text style="transform: matrix(1,0,0,1,-2.5,594.125)" >
+			<tspan x="0" y="0" class="txt8">© PrimeOne Catering 2014. Terms &amp; Conditions</tspan>
+		</text>
+		<text style="transform: matrix(1,0,0,1,474.5,-33.25)" >
+			<tspan x="0" y="0" class="txt7">contact@primeone.com</tspan>
+		</text>
+		<text style="transform: matrix(1,0,0,1,23.5,17.75)" >
+			<tspan x="0" y="0" class="txt7">(718) 777-7777</tspan>
+		</text>
+		<path class="shp0" d="M456.9 -39.24L465.63 -46.48L465.63 -29.04L456.9 -39.24ZM439.44 -47.4L465.56 -47.4L452.5 -36.64L439.44 -47.4ZM452.5 -35.58L456.33 -38.76L464.65 -29.03L440.35 -29.03L448.67 -38.66L452.5 -35.58ZM448.06 -39.24L439.34 -46.48L439.34 -29.04L448.06 -39.24Z" />
+		<path class="shp0" d="M1.62 1.63C0.6 2.39 -2.28 6.51 3.11 15.84C8.78 25.67 14.18 25.26 15.27 24.59L11.44 18.15C10.54 18.68 9.77 17.81 8.37 15.91C8.34 15.89 5.62 11.33 5.61 11.27C5.05 10.04 4.6 8.79 5.54 8.23L1.62 1.63ZM17.6 23.24C18.02 22.99 18.12 22.47 17.89 22.09L17.89 22.09C17.89 22.09 14.9 17.07 14.9 17.06C14.67 16.67 14.16 16.54 13.76 16.77L11.93 17.85L15.77 24.31C15.77 24.31 17.6 23.24 17.6 23.24L17.6 23.24ZM7.87 6.86C8.29 6.61 8.39 6.1 8.17 5.72L8.17 5.72C8.17 5.72 5.1 0.55 5.1 0.55C4.86 0.15 4.35 0.03 3.95 0.26L2.12 1.34L6.04 7.94C6.04 7.94 7.87 6.87 7.87 6.87L7.87 6.86Z" />
+		<g >
+		</g>
+		<path fill-rule="evenodd" class="shp0" d="M8.94 -50C14.87 -50 18.85 -45.73 18.85 -40.47C18.85 -35.21 8.87 -23 8.87 -23C8.87 -23 -0.99 -35.18 -0.99 -40.45C-0.99 -45.71 3.01 -50 8.94 -50ZM5.64 -42.06C5.64 -40.3 7.12 -38.88 8.94 -38.88C10.77 -38.88 12.25 -40.3 12.25 -42.06C12.25 -43.81 10.77 -45.24 8.94 -45.24C7.12 -45.24 5.64 -43.81 5.64 -42.06Z" />
+		<text style="transform: matrix(1,0,0,1,-0.5,-82.25)" >
+			<tspan x="0" y="0" class="txt9" dx="0 5 5 5 5 5 5 5 5" >Say hello</tspan>
+		</text>
+	</g>
+	<g >
+	</g>
+</svg>

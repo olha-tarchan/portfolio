@@ -228,6 +228,10 @@ $mediaWidth6:290px;
     line-height: 26px;
     color: #ffffff;
     font-weight: 400;
+    &:focus{
+      outline: none;
+      border-style: none;
+    }
   }
   &_name{
     font-size: 14px;

@@ -1,0 +1,25 @@
+@import "mixins.css";
+
+.ibg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  img {display: none;}
+}
+
+.slick-slider {
+  position: relative;
+  .slick-track, .slick-list {}
+  .slick-list {overflow:hidden;}
+  .slick-track{ @include flexbox(); align-items: flex-start;}
+  .slick-slide{}
+  .slick-dots {
+    li {
+      button{}
+      &.slick-active {
+        button{}
+      }
+    }
+  }
+}

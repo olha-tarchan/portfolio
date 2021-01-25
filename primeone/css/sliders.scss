@@ -1,0 +1,31 @@
+.slider {
+  position: relative;
+
+  .slider-body {
+
+  }
+
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index:10;
+  font-size: 0;
+}
+.slider .slick-arrow.slick-prev{
+  left: 0;
+
+  &:before {
+    content: "";
+    background: blue;
+    width: 10px;
+    height:10px;
+
+  }
+}
+.slider .slick-arrow.slick-next{
+  right: 0;
+
+}
+.slider_item{}

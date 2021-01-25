@@ -44,6 +44,7 @@ $mediaWidth6:290px;
 }
 
 ///=============Конкретный слайдер============
+
 .slick-current{
   outline: none;
   border-style:none ;
@@ -68,7 +69,10 @@ $mediaWidth6:290px;
     align-items: center;
     width: 70px;
     height: 70px;
-
+    &:focus {
+      outline: none;
+      border: none;
+    }
     &_img{
       transition: all 0.3s ease 0s;
       border-radius: 50%;

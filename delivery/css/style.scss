@@ -271,6 +271,11 @@ input {
   text-decoration: none;
   line-height: 2;
   white-space: nowrap;
+  &:hover{
+    background-color: $greyMidl;
+    @include anim(0.3s,0s);
+    @include transform_translate(0px,2px);
+  }
   @media (max-width:$maxWidth2){
     font-size: 18px;
     padding: 12px 25px 9px 25px;
@@ -1075,3 +1080,7 @@ input {
   .decor-image{width: auto !important;}
   .level-5 .decor-image.im4{width: 100% !important;}
 }
+
+/*
+hover for <a href>
+ */

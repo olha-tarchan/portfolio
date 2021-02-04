@@ -258,7 +258,12 @@ input {
     flex: 0 0 40%;
   }
 }
-
+a, a:hover, a:focus, a:active,a:visited,a:focus-visible,a:focus-within,
+.btn, .btn:hover, .btn:focus, .btn:active,.btn:visited,.btn:focus-visible,.btn:focus-within,
+button, button:hover, button:focus, button:active,button:visited,button:focus-visible,button:focus-within{
+  outline: none;
+  border: none;
+}
 .btn-green {
   cursor: pointer;
   background-color: #6ece0f;

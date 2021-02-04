@@ -451,7 +451,7 @@ section {
 
 .presentation{
   position: relative;
-  padding: 140px 0px 389px 0px;
+  padding: 140px 0px 359px 0px;
   @media (max-width: 1430px){padding: 80px 0px 280px 0px;}
   @media (max-width: 1200px){padding: 80px 0px 180px 0px;}
   & .column{
@@ -478,13 +478,14 @@ section {
     padding: 7px 82px 2px 84px;
     letter-spacing: 0.3px;
     border-radius: 40px;
+    margin-bottom: 30px;
     @media (max-width: 1430px){
       line-height: 50px;
       font-size: 18px;
       padding: 7px 58px 2px 58px;
     }
     &.btn-red{
-      margin: 0px 23px 30px 0px;
+      margin-right:23px;
     }
   }
   &-img{

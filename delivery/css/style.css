@@ -25,6 +25,18 @@ body {
   background-color: #ffffff;
 }
 
+a, a:hover, a:focus, a:active, a:visited, a:focus-visible, a:focus-within,
+.btn, .btn:hover, .btn:focus, .btn:active, .btn:visited, .btn:focus-visible, .btn:focus-within,
+button, button:hover, button:focus, button:active, button:visited, button:focus-visible, button:focus-within {
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:hover {
+  background-color: red;
+}
+
 .page {
   display: -webkit-box;
   display: -moz-box;
@@ -343,11 +355,11 @@ input:focus {
 
 .anim-item {
   opacity: 0;
+  transition: all 0.7s ease 0s;
   -webkit-transition: all 0.7s ease 0s;
   -moz-transition: all 0.7s ease 0s;
   -ms-transition: all 0.7s ease 0s;
   -o-transition: all 0.7s ease 0s;
-  transition: all 0.7s ease 0s;
 }
 .anim-item.show-left {
   transform: translate(-30%, 0%);
@@ -437,6 +449,19 @@ input:focus {
   text-decoration: none;
   line-height: 2;
   white-space: nowrap;
+}
+.btn-green:hover {
+  background-color: #3d3d3d;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transform: translate(0px, 2px);
+  -ms-transform: translate(0px, 2px);
+  -webkit-transform: translate(0px, 2px);
+  -o-transform: translate(0px, 2px);
+  -moz-transform: translate(0px, 2px);
 }
 @media (max-width: 1330px) {
   .btn-green {
@@ -1282,11 +1307,11 @@ input:focus {
   height: 38px;
   top: 0px;
   right: 0px;
+  transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
 }
 .select-language .custom-select_trigger .arrow:before {
   content: "";

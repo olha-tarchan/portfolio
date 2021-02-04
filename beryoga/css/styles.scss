@@ -35,6 +35,13 @@ $blue:#3cbef1;
   border: 0;
   box-sizing: border-box;
 }
+a, a:hover, a:focus, a:active,a:visited,a:focus-visible,a:focus-within,
+.btn, .btn:hover, .btn:focus, .btn:active,.btn:visited,.btn:focus-visible,.btn:focus-within,
+button, button:hover, button:focus, button:active,button:visited,button:focus-visible,button:focus-within{
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 html, body{
   height: 100%;
 }
@@ -60,6 +67,7 @@ a{
   @media (max-width: 400px){font-size: 16px; line-height: 25px; }
   &:focus{
     outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   &.link-more{
     &:before {

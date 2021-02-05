@@ -1,49 +1,44 @@
 $(document).ready(function(){
 
+    function toggleMenu(){
+        $('.icon-menu, .header,.header-menu').toggleClass('active');
+    }
+
     $('.icon-menu').on('click', function() {
-        this.classList.toggle('active');
-        $('.header,.header-menu').toggleClass('active');
+        toggleMenu();
     })
 
-/*
-======Header menu ==========================================
-*/
+/*======Header menu ==========================================*/
     let lastId,
-        topMenu = $("#top-menu"),
+        topMenu = $('#top-menu'),
 
-        // All list items
-        menuItems = topMenu.find("a"),
-        // Anchors corresponding to menu items
+        menuItems = topMenu.find('a'),
         scrollItems = menuItems.map(function(){
             let item = $($(this).attr("href"));
             if (item.length) { return item; }
         });
 
     menuItems.click(function(e){
-        let href = $(this).attr("href"),
+        let href = $(this).attr('href'),
             offsetTop = href === "#" ? 0 : $(href).offset().top+1;
         $('html, body').stop().animate({
             scrollTop: offsetTop
-        }, 300);
+        }, 600);
         e.preventDefault();
+        toggleMenu();
     });
 
-/*
-======Change header pagination: ==========================================
-*/
+/*======Change header pagination: =========================================*/
     function headerPagination(){
-        console.log("page");
         let headerPaginationBlock = $('.header-pagination');
         let activeMenuIndex = $('#top-menu a.active').index()+1;
         let numberSection = activeMenuIndex<10 ? "0"+activeMenuIndex : activeMenuIndex;
-        console.log("activeMenuIndex ",activeMenuIndex);
-        console.log("numberSection ",numberSection);
+
         $('.header-pagination-current-num').text(numberSection);
     }
   //  headerPagination();
-/*
-======Load line-skills==========================================
-*/
+
+/*======Load line-skills==========================================*/
     function preloadBarAnimate(block){
         let blockPosition = block.offset().top,
             blockHeight = block.innerHeight(),
@@ -63,6 +58,18 @@ $(document).ready(function(){
     }
     preloadBarAnimate($('.skills'));
 
+
+ /*===========MODAL WINDOW======================================================================= */
+    $('.modal-open').on('click', function(){
+        $('.modal').addClass('active');
+    })
+    $('.modal-close').on('click', function(){
+        $('.modal').removeClass('active');
+    })
+
+
+
+/*===========Scrolling WINDOW=======================================================================*/
 
     $(window).scroll(function (){
         /*======Header menu ==========================================*/
@@ -86,7 +93,6 @@ $(document).ready(function(){
                 .removeClass("active")
                 .filter("[href='#"+id+"']").addClass("active");
 
-            console.log('cur = ',cur.index());
             let numberSection = (cur.index()+1)<10 ? "0"+(cur.index()+1) : (cur.index()+1);
            $('.header-pagination-current-num span')
                .animate({
@@ -104,15 +110,11 @@ $(document).ready(function(){
         /*======header-pagination========================================== */
       //  headerPagination();
 
-
-
         /*======Load line-skills========================================== */
         preloadBarAnimate($('.skills'));
     });
 
-    /*
 
-==================================================================================
-     */
+/*==================================================================================*/
 
 });

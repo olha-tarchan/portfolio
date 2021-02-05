@@ -1,4 +1,12 @@
+/*
+@media:
 
+@media (max-width: $mediaWidth1){}
+@media (max-width: $mediaWidth2){}
+@media (max-width: $mediaWidth3){}
+@media (max-width: $mediaWidth4){}
+
+ */
 $mediaWidth1:720px;
 $mediaWidth2:650px;
 $mediaWidth3:550px;
@@ -8,7 +16,7 @@ $mediaWidth5:390px;
 ========================
  */
 @import "ibg.css";
-@import "mixins.css";
+@import "mixins.scss";
 $font_Roboto: 'Roboto', sans-serif;
 $font_PlayfairDisplay: 'Playfair Display', serif;
 $font_Arial: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -274,7 +282,7 @@ textarea.input {
     max-width: 780px;
     margin: 0 auto;
     position: relative;
-   // z-index: 10;
+    // z-index: 10;
     z-index: 5;
     font-size: 16px;
     color:#ffffff;
@@ -365,22 +373,21 @@ textarea.input {
   }
 }
 .menu-resize{
-  display: none;
+  @include flexbox();
+  justify-content: center;
+  position: fixed;
+  top: -120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #342b59;
+  z-index: 10;
+  overflow: auto;
+  padding: 70px 0px;
+  @include anim(0.3s, 0s);
   @media (max-width: 720px) {
     &.active{
-      @include flexbox();
-      justify-content: center;
-      position: fixed;
-      top: 0px;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #342b59;
-     // z-index: 40;
-      z-index: 10;
-      overflow: auto;
-      padding: 70px 0px;
-
+      top:0;
       & .menu_resize_list {
         list-style: none;
 
@@ -555,7 +562,7 @@ textarea.input {
 
       #pause{
         position: absolute;
-       // z-index: 10;
+        // z-index: 10;
         z-index: 9;
         top: 50%;
         left: 50%;
@@ -896,31 +903,31 @@ textarea.input {
 
 
 }.contact-phone{
-  padding: 0px 0px 0px 30px;
-  background: url(../img/icon_phone.png) left top no-repeat;
-}
- .social{
-
-   &-icon{
-     display: inline-block;
-     width: 40px;
-     height: 40px;
-     background: url('../img/icon_social.png') no-repeat;
-     margin: 0px 5px 0px 0px;
-   }
-   &-facebook{  background-position: 0px 0px;}
-   &-twitter {  background-position: -45px 0px; }
-   &-instagram{ background-position: -133px 0px;}
-   &-google  {  background-position: -175px 0px;}
-   &-youtube {  background-position: -219px 0px;}
+   padding: 0px 0px 0px 30px;
+   background: url(../img/icon_phone.png) left top no-repeat;
  }
+.social{
 
- /*
- SLIDER Examp
- https://www.youtube.com/watch?v=FB7axHm_yXo&ab_channel=REDGroup
- 14:26
- параметр AsNavFor
-  */
+  &-icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url('../img/icon_social.png') no-repeat;
+    margin: 0px 5px 0px 0px;
+  }
+  &-facebook{  background-position: 0px 0px;}
+  &-twitter {  background-position: -45px 0px; }
+  &-instagram{ background-position: -133px 0px;}
+  &-google  {  background-position: -175px 0px;}
+  &-youtube {  background-position: -219px 0px;}
+}
+
+/*
+SLIDER Examp
+https://www.youtube.com/watch?v=FB7axHm_yXo&ab_channel=REDGroup
+14:26
+параметр AsNavFor
+ */
 .rev_slider{
   text-align: center;
   background: #cccccc;

@@ -406,26 +406,31 @@ textarea.input::placeholder {
 }
 
 .menu-resize {
-  display: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  justify-content: center;
+  position: fixed;
+  top: -120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #342b59;
+  z-index: 10;
+  overflow: auto;
+  padding: 70px 0px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 @media (max-width: 720px) {
   .menu-resize.active {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    font-size: 0;
-    justify-content: center;
-    position: fixed;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #342b59;
-    z-index: 10;
-    overflow: auto;
-    padding: 70px 0px;
+    top: 0;
   }
   .menu-resize.active .menu_resize_list {
     list-style: none;

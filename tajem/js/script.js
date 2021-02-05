@@ -19,10 +19,36 @@ $(document).ready(function(){
         slidesToShow: 3,
     });
 
-    $('.icon-menu').on('click',function(){
-       this.classList.toggle('active');
-       $('.menu-resize').toggleClass('active');
-       $('.header').toggleClass('active');
-       $('.content').toggleClass('hide');
+
+    /*===========Header menu ==============     */
+
+    let header = $('.header'),
+        iconMenu =   header.find('.icon-menu'),
+        menu = $('.menu-anchor'),
+        menuLink = menu.find('a');
+
+    function toggleMenuHeader(){
+        iconMenu.toggleClass('active');
+        menu.toggleClass('active');
+        header.toggleClass('active');
+    }
+    iconMenu.on('click', function(){
+        toggleMenuHeader();
     })
+
+    menuLink.on('click',function(e){
+        let $this=$(this);
+        let href = $this.attr("href"),
+            offsetTop = href === "#" ? 0 : $(href).offset().top;
+
+        if(menu.hasClass('active')){
+            toggleMenuHeader();
+            offsetTop = $(href).offset().top-header.height();
+        }
+
+        $('html, body').stop().animate({
+            scrollTop: offsetTop
+        }, 1000 );
+        e.preventDefault();
+    });
 });

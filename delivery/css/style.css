@@ -33,10 +33,6 @@ button, button:hover, button:focus, button:active, button:visited, button:focus-
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-a:hover {
-  background-color: red;
-}
-
 .page {
   display: -webkit-box;
   display: -moz-box;

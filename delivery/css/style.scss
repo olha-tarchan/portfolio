@@ -42,9 +42,8 @@ button, button:hover, button:focus, button:active,button:visited,button:focus-vi
   border: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-a:hover{
-  background-color: red;
-}
+
+
 .page{
   @include flexbox();
   flex-direction: column;

@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('.slider_user').slick({
-        arrows:true, //стрелки
+        arrows:true,
         slidesToShow:5,
         slidesToScroll:1,
         speed:1000,
@@ -9,6 +9,7 @@ $(document).ready(function(){
         draggable:false,
         centerMode:true,
         variableWidth:true,
+        focusOnSelect: true,
         asNavFor:'.slider_comment',
 
     });
@@ -16,6 +17,8 @@ $(document).ready(function(){
         arrows:false,
         fade:true,
         asNavFor:'.slider_user',
-        adaptiveHeight:true
+        adaptiveHeight:true,
+        slidesToShow:1,
+        slidesToScroll:1,
     });
 })

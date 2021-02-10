@@ -338,7 +338,7 @@ h2 {
   width: 100%;
 }
 
-section {
+.section {
   padding: 20px 0px;
   position: relative;
 }
@@ -1310,7 +1310,7 @@ section {
   }
 }
 
-section.bottom {
+.section.bottom {
   padding: 20px 0px 0px 0px;
   background-image: url("../img/fon-footer.png");
   background-repeat: no-repeat;

@@ -539,6 +539,7 @@ WORKS
 }
 .works .column {
   flex: 1 1 33.333%;
+  max-width: 33.333%;
   padding: 10px;
   margin: 0px 0px 30px 0px;
 }

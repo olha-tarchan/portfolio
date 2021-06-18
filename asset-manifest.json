@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/olha-tarchan/react_recipe/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/olha-tarchan/react_recipe/static/js/main.4436b39d.chunk.js",
+    "main.js.map": "/olha-tarchan/react_recipe/static/js/main.4436b39d.chunk.js.map",
+    "runtime-main.js": "/olha-tarchan/react_recipe/static/js/runtime-main.0a26a4b7.js",
+    "runtime-main.js.map": "/olha-tarchan/react_recipe/static/js/runtime-main.0a26a4b7.js.map",
+    "static/js/2.ef57e5a0.chunk.js": "/olha-tarchan/react_recipe/static/js/2.ef57e5a0.chunk.js",
+    "static/js/2.ef57e5a0.chunk.js.map": "/olha-tarchan/react_recipe/static/js/2.ef57e5a0.chunk.js.map",
+    "static/js/3.07744f65.chunk.js": "/olha-tarchan/react_recipe/static/js/3.07744f65.chunk.js",
+    "static/js/3.07744f65.chunk.js.map": "/olha-tarchan/react_recipe/static/js/3.07744f65.chunk.js.map",
+    "index.html": "/olha-tarchan/react_recipe/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/olha-tarchan/react_recipe/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.ef57e5a0.chunk.js.LICENSE.txt": "/olha-tarchan/react_recipe/static/js/2.ef57e5a0.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/olha-tarchan/react_recipe/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0a26a4b7.js",
+    "static/js/2.ef57e5a0.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.4436b39d.chunk.js"
+  ]
+}

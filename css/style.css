@@ -113,6 +113,14 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-size: 28px;
+  color: #b2b1b3;
+  font-family: "Caveat", cursive;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
 .wrapper {
   display: flex;
   min-height: 100%;
@@ -476,6 +484,16 @@ h2 {
 .home_bg_img {
   height: 100%;
   width: 100%;
+}
+.home_image_center {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.home_image_center img {
+  min-height: 100%;
+  max-width: 100%;
 }
 
 .social {

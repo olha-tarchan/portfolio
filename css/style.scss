@@ -397,11 +397,11 @@ h3{
     font-size: 26px;
     color:$bgGreyDark;
     line-height: 20px;
-    padding: 20px 0px 70px 0px;
+    padding: 20px 0 20px 0;
     text-transform: uppercase;
     @media (max-width: 480px){
       font-size: 20px;
-      padding: 10px 0px 40px 0px;
+      padding: 10px 0 40px 0;
     }
   }
   &_bg_img{
@@ -431,7 +431,7 @@ h3{
   }
   &_link {
     margin: 0px 30px 40px 0px;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 5px;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 14px;
